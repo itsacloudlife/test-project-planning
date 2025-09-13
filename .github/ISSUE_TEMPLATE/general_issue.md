@@ -1,3 +1,12 @@
+---
+name: General Issue
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 ## Description
 <!-- Provide a clear and concise description of the issue -->
 
