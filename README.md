@@ -16,21 +16,25 @@ This repository provides a structured approach to planning, tracking, and execut
 ## 🚀 Quick Start for New Client Projects
 
 ### Step 1: Create New Project Repository
+
 1. Click **"Use this template"** button on GitHub
 2. Create repository: `[client-name]`
 3. Clone to your local machine:
    ```bash
-   git clone https://github.com/[your-org]/[client-name]-aws-infrastructure.git
-   cd [client-name]-aws-infrastructure
+   git clone https://github.com/[your-org]/[client-name].git
+   cd [client-name]
    ```
 
 ### Step 2: Initialize Project Planning
+
 1. **Start the planning process:**
+
    ```bash
    /project-plan [your project scope description]
    ```
 
 2. **Example usage:**
+
    ```bash
    /project-plan Deploy scalable e-commerce platform on AWS with high availability, supporting 10k concurrent users, using containerized architecture with RDS database and CloudFront CDN
    ```
@@ -42,7 +46,9 @@ This repository provides a structured approach to planning, tracking, and execut
    - Provide architectural recommendations
 
 ### Step 3: Sync with GitHub Issues
+
 1. **Create GitHub issues from your plan:**
+
    ```bash
    /project-plan sync
    ```
@@ -54,7 +60,9 @@ This repository provides a structured approach to planning, tracking, and execut
    - Updates your PROJECT_PLAN.md with issue numbers
 
 ### Step 4: Monitor Progress
+
 1. **Check project status anytime:**
+
    ```bash
    /project-plan status
    ```
@@ -69,12 +77,12 @@ This repository provides a structured approach to planning, tracking, and execut
 
 ### `/project-plan` - Main Planning Command
 
-| Usage | Description |
-|-------|-------------|
+| Usage                   | Description                                    |
+| ----------------------- | ---------------------------------------------- |
 | `/project-plan [scope]` | Create new project plan from scope description |
-| `/project-plan update` | Modify existing project plan |
-| `/project-plan sync` | Sync plan tasks to GitHub issues |
-| `/project-plan status` | Check project progress and status |
+| `/project-plan update`  | Modify existing project plan                   |
+| `/project-plan sync`    | Sync plan tasks to GitHub issues               |
+| `/project-plan status`  | Check project progress and status              |
 
 #### Detailed Command Examples:
 
@@ -119,6 +127,7 @@ This repository provides a structured approach to planning, tracking, and execut
 ## 📋 Project Planning Workflow
 
 ### 1. Initial Planning Phase
+
 ```mermaid
 graph LR
 A[Scope Definition] --> B[AI Questions]
@@ -128,6 +137,7 @@ D --> E[Stakeholder Review]
 ```
 
 ### 2. Execution Phase
+
 ```mermaid
 graph LR
 A[Sync to GitHub] --> B[Issue Assignment]
@@ -137,6 +147,7 @@ D --> E[Status Reporting]
 ```
 
 ### 3. Ongoing Management
+
 ```mermaid
 graph LR
 A[Regular Status Checks] --> B[Plan Updates]
@@ -150,6 +161,7 @@ D --> A
 Each generated `PROJECT_PLAN.md` includes:
 
 ### Essential Sections:
+
 - **Overview**: Project goals and business objectives
 - **AWS Architecture**: Required services and design decisions
 - **Implementation Phases**: Structured 4-phase approach
@@ -160,6 +172,7 @@ Each generated `PROJECT_PLAN.md` includes:
 - **Team & Responsibilities**: RACI matrix and role definitions
 
 ### Automated Sections:
+
 - **GitHub Issue Tracking**: Real-time sync status
 - **Progress Monitoring**: Completion percentages by phase
 - **Change Log**: Automatic tracking of plan modifications
@@ -167,12 +180,14 @@ Each generated `PROJECT_PLAN.md` includes:
 ## 🔄 GitHub Integration Features
 
 ### Automated Issue Management
+
 - **Smart Issue Creation**: Each task becomes a tracked GitHub issue
 - **Automatic Labeling**: Issues tagged by phase, priority, and component
 - **Project Board Integration**: Connected to https://github.com/orgs/itsacloudlife/projects/5
 - **Progress Tracking**: Real-time status updates in PROJECT_PLAN.md
 
 ### Issue Lifecycle
+
 1. **Created**: Task identified in project plan
 2. **Assigned**: Team member takes ownership
 3. **In Progress**: Work begins, tracked in GitHub
@@ -182,6 +197,7 @@ Each generated `PROJECT_PLAN.md` includes:
 ## 📊 Monitoring and Reporting
 
 ### Real-time Status Dashboard
+
 The `/project-plan status` command provides:
 
 ```
@@ -201,6 +217,7 @@ Phase Breakdown:
 ```
 
 ### Automated Reports
+
 - **Daily Standup Reports**: Progress since last update
 - **Weekly Status Reports**: Comprehensive progress analysis
 - **Milestone Reports**: Phase completion and next steps
@@ -211,6 +228,7 @@ Phase Breakdown:
 The template supports these pre-configured patterns:
 
 ### 1. **Web Application Stack**
+
 - VPC with public/private subnets
 - Application Load Balancer
 - Auto Scaling Groups
@@ -218,6 +236,7 @@ The template supports these pre-configured patterns:
 - CloudFront + S3
 
 ### 2. **Microservices Architecture**
+
 - ECS/EKS container orchestration
 - API Gateway + Lambda
 - DynamoDB + ElastiCache
@@ -225,6 +244,7 @@ The template supports these pre-configured patterns:
 - CI/CD pipelines
 
 ### 3. **Data Processing Pipeline**
+
 - S3 data lake architecture
 - Lambda data processing
 - Kinesis streaming
@@ -232,6 +252,7 @@ The template supports these pre-configured patterns:
 - QuickSight dashboards
 
 ### 4. **Serverless Application**
+
 - Lambda function architecture
 - API Gateway routing
 - DynamoDB data layer
@@ -241,6 +262,7 @@ The template supports these pre-configured patterns:
 ## 🛡️ Security and Compliance
 
 ### Built-in Security Checklist
+
 - Network security configuration
 - IAM roles and policies
 - Encryption at rest and in transit
@@ -248,6 +270,7 @@ The template supports these pre-configured patterns:
 - Compliance framework alignment
 
 ### Compliance Support
+
 - **SOC 2**: Security controls and monitoring
 - **HIPAA**: Healthcare data protection
 - **PCI DSS**: Payment card security
@@ -256,12 +279,14 @@ The template supports these pre-configured patterns:
 ## 💰 Cost Management
 
 ### Automated Cost Estimation
+
 - Service-by-service cost breakdown
 - Environment-based pricing
 - Monthly and annual projections
 - Cost optimization recommendations
 
 ### Cost Monitoring
+
 - Budget alerts and thresholds
 - Resource utilization tracking
 - Right-sizing recommendations
@@ -270,6 +295,7 @@ The template supports these pre-configured patterns:
 ## 👥 Team Collaboration
 
 ### Role-Based Access
+
 - **Project Manager**: Full plan access and reporting
 - **Solution Architect**: Architecture decisions and reviews
 - **DevOps Engineer**: Implementation task management
@@ -277,6 +303,7 @@ The template supports these pre-configured patterns:
 - **Client Stakeholder**: Read-only progress access
 
 ### Communication Features
+
 - **Slack Integration**: Status updates to team channels
 - **Email Reports**: Weekly progress summaries
 - **GitHub Notifications**: Real-time issue updates
@@ -285,12 +312,14 @@ The template supports these pre-configured patterns:
 ## 🔧 Customization Guide
 
 ### For Your Organization
+
 1. **Update GitHub Organization**: Replace `itsacloudlife` with your org name
 2. **Customize Project Board**: Update project board URL in templates
 3. **Add Company Branding**: Update templates with your company information
 4. **Configure Integrations**: Set up Slack, email, or other notification systems
 
 ### For Specific Clients
+
 1. **Client Information**: Update contact details and stakeholder info
 2. **Compliance Requirements**: Add client-specific compliance needs
 3. **Budget Constraints**: Configure appropriate cost thresholds
@@ -299,24 +328,28 @@ The template supports these pre-configured patterns:
 ## 🚀 Getting Started Checklist
 
 ### Repository Setup
+
 - [ ] Use this template to create new client repository
 - [ ] Update repository name and description
 - [ ] Configure GitHub project board access
 - [ ] Set up team member permissions
 
 ### Initial Configuration
+
 - [ ] Update `.claude/CLAUDE.md` with client-specific context
 - [ ] Customize issue templates in `.github/ISSUE_TEMPLATE/`
 - [ ] Configure notification preferences
 - [ ] Set up local development environment
 
 ### First Project Plan
+
 - [ ] Run `/project-plan [scope]` with client requirements
 - [ ] Review and refine generated plan
 - [ ] Execute `/project-plan sync` to create GitHub issues
 - [ ] Assign initial tasks to team members
 
 ### Ongoing Management
+
 - [ ] Schedule regular `/project-plan status` checks
 - [ ] Update plans as requirements evolve
 - [ ] Monitor GitHub project board progress
@@ -325,17 +358,20 @@ The template supports these pre-configured patterns:
 ## 📚 Additional Resources
 
 ### Documentation
+
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [GitHub Project Management](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 - [Claude Code Documentation](https://docs.claude.com/en/docs/claude-code)
 
 ### Training Materials
+
 - AWS Solution Architecture patterns
 - Project management best practices
 - GitHub integration workflows
 - Client communication templates
 
 ### Support
+
 - Technical issues: Create GitHub issue in this repository
 - Feature requests: Use GitHub Discussions
 - Urgent support: Contact project maintainers
@@ -351,6 +387,7 @@ We welcome contributions to improve this template! Please:
 5. Open Pull Request
 
 ### Contribution Areas
+
 - New AWS architecture patterns
 - Enhanced automation features
 - Additional reporting capabilities
